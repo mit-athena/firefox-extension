@@ -2,8 +2,8 @@ Source: debathena-firefox-extension
 Section: debathena/web
 Priority: extra
 Maintainer: Debathena Project <debathena@mit.edu>
-Build-Depends: @cdbs@, config-package-dev (>= 4.10~), zip, debathena-maybe-ubufox
-Standards-Version: 3.9.1
+Build-Depends: cdbs, debhelper, dh-buildinfo, autoconf, config-package-dev (>= 5.0~), config-package-dev (>= 4.10~), zip, debathena-maybe-ubufox
+Standards-Version: 3.9.3
 
 Package: debathena-firefox-extension
 Architecture: all
