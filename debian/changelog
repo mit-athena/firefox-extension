@@ -1,3 +1,9 @@
+debathena-firefox-extension (10.2-0debathena1) unstable; urgency=low
+
+  * Disable pdf.js (Trac: #1466)
+
+ -- Jonathan Reed <jdreed@mit.edu>  Mon, 05 May 2014 11:59:40 -0400
+
 debathena-firefox-extension (10.1-0debathena5) unstable; urgency=low
 
   * Switch from control.in to control (Trac: #561)
