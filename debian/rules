@@ -9,11 +9,11 @@ else
 	/etc/firefox-3.0/pref/ubufox.js.debathena
 endif
 
-DEB_AUTO_UPDATE_AUTOCONF = 2.50
 include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/class/makefile.mk
 include /usr/share/cdbs/1/rules/config-package.mk
 
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR)
+
 clean::
-	rm -f configure
 	rm -f chrome.manifest chrome/athena.jar

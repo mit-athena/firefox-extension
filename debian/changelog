@@ -1,3 +1,9 @@
+debathena-firefox-extension (10.2.1-0debathena2) unstable; urgency=low
+
+  * Update the rules file so that this actually builds.
+
+ -- Jonathan Reed <jdreed@mit.edu>  Mon, 05 May 2014 16:24:23 -0400
+
 debathena-firefox-extension (10.2.1-0debathena1) unstable; urgency=low
 
   * Package 10.2.1, which contains changes to the upstream build system,
