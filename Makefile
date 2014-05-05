@@ -1,16 +1,9 @@
-# $Id: Makefile.in,v 1.1 2006-06-01 16:59:11 rbasch Exp $
-
-SHELL=/bin/sh
-VPATH=@srcdir@
-INSTALL=@INSTALL@
-INSTALL_PROGRAM=@INSTALL_PROGRAM@
-INSTALL_SCRIPT=@INSTALL_SCRIPT@
-INSTALL_DATA=@INSTALL_DATA@
-srcdir=@srcdir@
-top_srcdir=@top_srcdir@
-prefix=@prefix@
-exec_prefix=@exec_prefix@
-libdir=@libdir@
+INSTALL=install
+INSTALL_DATA=${INSTALL} -m 644
+MKDIR_P=mkdir -p
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
 
 ATHEXTDIR = ${libdir}/debathena-firefox-extension
 CHROMEDIR = ${ATHEXTDIR}/chrome
@@ -39,10 +32,10 @@ chrome.manifest: chrome.manifest.in
 check:
 
 install:
-	${top_srcdir}/mkinstalldirs ${DESTDIR}${ATHEXTDIR}
-	${top_srcdir}/mkinstalldirs ${DESTDIR}${CHROMEDIR}
-	${top_srcdir}/mkinstalldirs ${DESTDIR}${COMPONENTS_DIR}
-	${top_srcdir}/mkinstalldirs ${DESTDIR}${PREFS_DIR}
+	${MKDIR_P} ${DESTDIR}${ATHEXTDIR}
+	${MKDIR_P} ${DESTDIR}${CHROMEDIR}
+	${MKDIR_P} ${DESTDIR}${COMPONENTS_DIR}
+	${MKDIR_P} ${DESTDIR}${PREFS_DIR}
 	${INSTALL_DATA} chrome/athena.jar ${DESTDIR}${CHROMEDIR}
 	${INSTALL_DATA} chrome.manifest ${DESTDIR}${ATHEXTDIR}
 	for i in ${COMPONENTS_FILES} ; do \
