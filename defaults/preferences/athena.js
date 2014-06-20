@@ -20,10 +20,3 @@ pref("network.negotiate-auth.trusted-uris", "https://idp.mit.edu");
 // Do not delete files downloaded for helper applications upon exit,
 // to give users a chance to retrieve them if desired.
 pref("browser.helperApps.deleteTempFileOnExit", false);
-
-// Disable pdf.js, since it is incapable of generating PostScript
-pref("pdfjs.disabled", true);
-// Force Firefox to ask the user what to do with a PDF
-// (without this setting, and with pdfjs disabled as above, the PDF
-// will be automatically added to the "Downloads" window/popup
-pref("plugin.disable_full_page_plugin_for_types", "application/pdf");
