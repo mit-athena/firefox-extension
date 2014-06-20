@@ -1,3 +1,9 @@
+debathena-firefox-extension (10.2.2-0debathena1) unstable; urgency=low
+
+  * Package 10.2.2, which re-enables pdf.js (Trac: #1483)
+
+ -- Jonathan Reed <jdreed@mit.edu>  Fri, 20 Jun 2014 10:48:15 -0400
+
 debathena-firefox-extension (10.2.1-0debathena2) unstable; urgency=low
 
   * Update the rules file so that this actually builds.
