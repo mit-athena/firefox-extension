@@ -1,3 +1,10 @@
+debathena-firefox-extension (10.2.3-0debathena1) unstable; urgency=medium
+
+  * Package 10.2.3, which no longer installs the obsolete MIT CA for new
+    users.
+
+ -- Anders Kaseorg <andersk@mit.edu>  Thu, 23 Jun 2016 03:41:35 -0400
+
 debathena-firefox-extension (10.2.2-0debathena1) unstable; urgency=low
 
   * Package 10.2.2, which re-enables pdf.js (Trac: #1483)
