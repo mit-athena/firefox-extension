@@ -16,7 +16,6 @@ CHROME_FILES = \
   content/athena.dtd \
   content/athena.properties \
   content/athena.xul \
-  content/mitca.pem \
   content/csailca.pem \
   skin/icon.png
 
